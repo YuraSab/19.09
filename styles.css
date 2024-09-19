@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
@@ -12,15 +11,12 @@ body{
     background-position: center;
 }
 
+
 #section_one{
-    /*box-sizing: border-box;*/
+    display: none;
     height: 100vh;
     width: 100vw;
     flex-direction: column;
-    /*background-image: url("assets/background/villa.jpg");*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
 }
 
 .z-index_two{
@@ -34,7 +30,6 @@ body{
 }
 
 .white_blur_block{
-    /*height: 40px;*/
     width: fit-content;
     padding: 16px 30px;
     border: 1px white solid;
@@ -58,24 +53,12 @@ body{
     font-size: 84px;
     font-family: 'Nirmala UI', sans-serif;
     font-weight: 700;
-    /*line-height: 100px;*/
     line-height: 96px;
-
     text-align: center;
     text-transform: uppercase;
-    /*background: linear-gradient(45deg, #EB5D38, #FFD600);*/
-    /*background: linear-gradient(165deg, #EB5D38 40%, #FFD600 60%);*/
-    /*background: linear-gradient(165deg, #EB5D38 40%, #FFD600 60%); !* Збільшено відсотки для темнішого кольору *!*/
-    /*background: linear-gradient(165deg, #EB5D38 60%, #FFD600 100%); !* Темніший колір переважає *!*/
-    /*background: linear-gradient(165deg, #FFD600 30%, #EB5D38 70%); !* Світліший колір починається з 30% *!*/
-    /*background: linear-gradient(165deg, #EB5D38 30%, #FFD600 70%); !* Світліший колір починається з 30% *!*/
-    /*background: linear-gradient(165deg, #EB5D38 40%, #FFD600 60%); !* Світліший колір починається з 30% *!*/
-    /*background: linear-gradient(165deg, #ff3b25 40%, #ffb300 60%); !* Нові кольори для градієнту *!*/
-    background: linear-gradient(165deg, #ff3b25 40%, #ffa600 60%); /* Нові кольори для градієнту */
-
-
+    background: linear-gradient(165deg, #ff3b25 40%, #ffa600 60%);
     text-shadow: 0 0 20px rgba(255, 213, 54, 0.5);
-    -webkit-background-clip: text; /* колір фону лише для тексту */
+    -webkit-background-clip: text;
     -webkit-text-stroke: 1px white;
     color: transparent;
 
@@ -102,7 +85,6 @@ body{
 .button_set{
     width: 50%;
     display: flex;
-    /*justify-content: space-between;*/
     justify-content: center;
     gap: 50px;
 }
@@ -129,38 +111,16 @@ body{
     background: none;
 }
 
-/*.hot_button{*/
-/*    color: white;*/
-/*    !*background: linear-gradient(90deg, #ffa600 70%, #ff3b25 30%);*!*/
-/*    background: linear-gradient(90deg, #FFE53B 70%, #FF2525 30%);*/
-/*    border: none;*/
-/*    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2);*/
-/*}*/
-
 .hot_button {
     color: white;
-    /*background: linear-gradient(90deg, #FFE53B 0%, #FF2525 100%); !* Плавний перехід від жовтого до червоного *!*/
-    /*background: linear-gradient(90deg, #FFE53B 0%, #FF2525 100%); !* Плавний перехід від жовтого до червоного *!*/
-    /*background: linear-gradient(90deg, #ffa600 0%, #FF2525 100%); !* Плавний перехід від жовтого до червоного *!*/
-    /*background: linear-gradient(90deg, #FFE53B 60%, #FF2525 30%); !* Плавний перехід від жовтого до червоного *!*/
-    /*background: linear-gradient(90deg, #FFE53B 0%, #FF2525 100%); !* Плавний перехід від жовтого до червоного *!*/
-
-    /*background: linear-gradient(90deg, #FFA500 0%, #FF6347 100%); !* Плавний перехід від оранжевого до світло-червоного *!*/
-    /*background: linear-gradient(90deg, #FFA500 0%, #FF2525 100%); !* Плавний перехід від оранжевого до світло-червоного *!*/
-
-    /*transition: background 0.3s ease; !* Плавний перехід фону *!*/
-
-    background: linear-gradient(90deg, #ffb621 0%, #FF2525 100%); /* Плавний перехід від оранжевого до світло-червоного */
-
-
+    background: linear-gradient(90deg, #ffb621 0%, #FF2525 100%);
     border: none;
     box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2);
-
-    padding: 10px 20px; /* Внутрішні відступи */
-    font-size: 16px; /* Розмір шрифту */
-    border-radius: 5px; /* Округлення країв */
-    cursor: pointer; /* Курсор при наведенні */
-    transition: background 0.3s ease; /* Плавний перехід фону */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 
@@ -168,7 +128,6 @@ body{
     position: absolute;
     bottom: 0;
     left: 70px;
-    /*height: 700px;*/
     height: 80vh;
     z-index: 1;
 }
@@ -177,30 +136,19 @@ body{
     position: absolute;
     bottom: 0;
     right: 20px;
-    /*height: 700px;*/
     height: 75vh;
     z-index: 1;
 }
 
 
-
-
-
-
-
-
 #section_two{
+    display: none;
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
     padding: 0 250px;
-
     flex-direction: column;
     gap: 50px;
-    /*background-image: url("assets/background/villa.jpg");*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
 }
 
 #section_two .hot_button{
@@ -217,7 +165,6 @@ body{
 }
 
 #section_two .hot_text{
-    /*margin: 0 250px;*/
     font-size: 64px;
     line-height: 76px;
 }
@@ -292,8 +239,8 @@ body{
     position: absolute;
     top: 50%;
     width: calc(100% - 2px);
-    height: 2px; /* Товщина лінії */
-    background-color: white; /* Колір лінії */
+    height: 2px;
+    background-color: white;
     transform: translateY(-50%);
 }
 
@@ -331,15 +278,8 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
 #section_three{
+    display: none;
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
@@ -380,7 +320,6 @@ body{
     position: absolute;
     bottom: 0;
     left: 50px;
-    /*height: 700px;*/
     height: 80vh;
     z-index: 1;
 }
@@ -389,11 +328,9 @@ body{
     position: absolute;
     bottom: 0;
     right: 30px;
-    /*height: 700px;*/
     height: 80vh;
     z-index: 1;
 }
-
 
 
 #volume_icon_block{

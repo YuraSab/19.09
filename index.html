@@ -7,72 +7,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-<!--    <section id="section_one" class="flex_center">-->
+    <section id="section_one" class="flex_center">
 
-<!--        <div class="white_blur_block flex_center z-index_two">-->
-<!--            <h4>Stop spending time on mediocre online stuff!</h4>-->
-<!--        </div>-->
+        <div class="white_blur_block flex_center z-index_two">
+            <h4>Stop spending time on mediocre online stuff!</h4>
+        </div>
 
-<!--        <h2 class="hot_text z-index_two">-->
-<!--            Explore our intriguing<br/>-->
-<!--            3D game-->
-<!--        </h2>-->
+        <h2 class="hot_text z-index_two">
+            Explore our intriguing<br/>
+            3D game
+        </h2>
 
-<!--        <h4 class="yellow_text z-index_two">-->
-<!--            instead and experience unparalleled pleasure like <br/>-->
-<!--            you've never seen before.-->
-<!--        </h4>-->
+        <h4 class="yellow_text z-index_two">
+            instead and experience unparalleled pleasure like <br/>
+            you've never seen before.
+        </h4>
 
-<!--        <div class="button_set z-index_two">-->
-<!--            <button class="transparent_button">No,thanks</button>-->
-<!--            <button class="hot_button">Continue</button>-->
-<!--        </div>-->
-
-
-<!--        <img src="assets/images/girl_one.png" alt="Опис зображення" id="first_section-girl_one">-->
-<!--        <img src="assets/images/girl_two.png" alt="Опис зображення" id="first_section-girl_two">-->
-
-<!--    </section>-->
+        <div class="button_set z-index_two">
+            <button class="transparent_button">No,thanks</button>
+            <button class="hot_button" onclick="nextStep('section_one', 'section_two')">Continue</button>
+        </div>
 
 
+        <img src="assets/images/girl_one.png" alt="Опис зображення" id="first_section-girl_one">
+        <img src="assets/images/girl_two.png" alt="Опис зображення" id="first_section-girl_two">
 
-<!--    <section id="section_two" class="flex_center">-->
-<!--        <h2 class="hot_text z-index_two">-->
-<!--            Who Would You Choose as Your-->
-<!--            First Partner, if you play right now?-->
-<!--        </h2>-->
-<!--        <div class="slider_block flex_center">-->
+    </section>
 
-<!--            <div class="button_left">-->
-<!--                <div class="arrow"></div>-->
-<!--            </div>-->
 
-<!--            <div class="white_blur_block flex_center">-->
-<!--                <img src="assets/pictures/girl_one.jpg" alt="girl">-->
-<!--                <h3 class="white_text">Step-Sister</h3>-->
-<!--            </div>-->
 
-<!--            <div class="button_right">-->
-<!--                <div class="arrow"></div>-->
-<!--            </div>-->
+    <section id="section_two" class="flex_center">
+        <h2 class="hot_text z-index_two">
+            Who Would You Choose as Your
+            First Partner, if you play right now?
+        </h2>
+        <div class="slider_block flex_center">
 
-<!--        </div>-->
-<!--        <button class="hot_button">NEXT</button>-->
-<!--    </section>-->
+            <div class="button_left">
+                <div class="arrow"></div>
+            </div>
+
+            <div class="white_blur_block flex_center">
+                <img src="assets/pictures/girl_one.jpg" alt="girl">
+                <h3 class="white_text">Step-Sister</h3>
+            </div>
+
+            <div class="button_right">
+                <div class="arrow"></div>
+            </div>
+
+        </div>
+        <button class="hot_button"  onclick="nextStep('section_two', 'section_three')">NEXT</button>
+    </section>
 
 
     <section id="section_three" class="flex_center">
         <h1 class="hot_text z-index_two">Warning</h1>
         <h4 class="white_text z-index_two">You must be at least 18 years old and comfortable with mature topics to play the game.</h4>
-        <button class="hot_button z-index_two">Ok, Continue</button>
+        <button class="hot_button z-index_two"  onclick="nextStep('section_three', 'section_one')">Ok, Continue</button>
 
         <img src="assets/images/girl_three.png" alt="Опис зображення" id="third_section-girl_three">
         <img src="assets/images/girl_four.png" alt="Опис зображення" id="third_section-girl_four">
     </section>
-
 
 
     <div id="volume_icon_block">
@@ -83,5 +81,8 @@
     </div>
 
 
+    <script src="scrypt.js"></script>
+
 </body>
 </html>
+
