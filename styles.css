@@ -130,6 +130,7 @@ body{
     left: 70px;
     height: 80vh;
     z-index: 1;
+    user-select: none;
 }
 
 #first_section-girl_two{
@@ -138,6 +139,7 @@ body{
     right: 20px;
     height: 75vh;
     z-index: 1;
+    user-select: none;
 }
 
 
@@ -322,6 +324,7 @@ body{
     left: 50px;
     height: 80vh;
     z-index: 1;
+    user-select: none;
 }
 
 #third_section-girl_four{
@@ -330,6 +333,7 @@ body{
     right: 30px;
     height: 80vh;
     z-index: 1;
+    user-select: none;
 }
 
 
@@ -338,3 +342,8 @@ body{
     top: 50px;
     right: 80px;
 }
+
+#icon_unmute {
+    display: none;
+}
+
