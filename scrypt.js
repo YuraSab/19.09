@@ -46,6 +46,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // slider/swiper
+// const slides = [
+//     { id: 1, imgPath: "assets/pictures/girl_one.jpg", title: "Step-Sisterddddddddddddddddddddddddd" },
+//     { id: 2, imgPath: "assets/pictures/girl_two.jpg", title: "Your Neighbor" },
+//     { id: 3, imgPath: "assets/pictures/girl_three.jpg", title: "Famous Celebrity" }
+// ];
+//
+// let currentSlideIndex = 0;
+//
+// function showSlide(index) {
+//     const slide = slides[index];
+//     document.getElementById('slider_image').src = slide.imgPath;
+//     document.getElementById('slider_title').textContent = slide.title;
+// }
+//
+// function prevSlide() {
+//     currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+//     showSlide(currentSlideIndex);
+// }
+// function nextSlide() {
+//     currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+//     showSlide(currentSlideIndex);
+// }
+//
+// showSlide(currentSlideIndex);
+
+
+
 const slides = [
     { id: 1, imgPath: "assets/pictures/girl_one.jpg", title: "Step-Sister" },
     { id: 2, imgPath: "assets/pictures/girl_two.jpg", title: "Your Neighbor" },
@@ -53,24 +80,37 @@ const slides = [
 ];
 
 let currentSlideIndex = 0;
+const maxLength = 20; // Максимальна кількість символів для заголовку
+
+function truncateText(text, maxLength) {
+    // Якщо довжина тексту більше за maxLength, обрізаємо його
+    if (text.length > maxLength) {
+        return text.slice(0, maxLength) + "...";
+    }
+    return text;
+}
 
 function showSlide(index) {
     const slide = slides[index];
     document.getElementById('slider_image').src = slide.imgPath;
-    document.getElementById('slider_title').textContent = slide.title;
+
+    // Обрізаємо заголовок, якщо він довший за maxLength
+    const truncatedTitle = truncateText(slide.title, maxLength);
+    document.getElementById('slider_title').textContent = truncatedTitle;
 }
 
 function prevSlide() {
     currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
     showSlide(currentSlideIndex);
 }
+
 function nextSlide() {
     currentSlideIndex = (currentSlideIndex + 1) % slides.length;
     showSlide(currentSlideIndex);
 }
 
+// Показуємо початковий слайд
 showSlide(currentSlideIndex);
-
 
 
 
