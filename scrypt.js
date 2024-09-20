@@ -95,8 +95,7 @@ function showSlide(index) {
     document.getElementById('slider_image').src = slide.imgPath;
 
     // Обрізаємо заголовок, якщо він довший за maxLength
-    const truncatedTitle = truncateText(slide.title, maxLength);
-    document.getElementById('slider_title').textContent = truncatedTitle;
+    document.getElementById('slider_title').textContent = truncateText(slide.title, maxLength);
 }
 
 function prevSlide() {

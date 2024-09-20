@@ -126,6 +126,7 @@ body{
     box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
     font-size: 16px;
+    text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -300,6 +301,10 @@ body{
     gap: 50px;
 }
 
+.section_three_text{
+    flex-direction: column;
+}
+
 #section_three .hot_text{
     font-size: 120px;
     line-height: 120px;
@@ -361,6 +366,13 @@ body{
 }
 
 
+
+@media screen and (max-width: 1550px){
+    #section_three .white_text{
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 1400px){
     #section_two{
         padding: 0 200px;
@@ -413,6 +425,15 @@ body{
         font-size: 24px;
         line-height: 24px;
     }
+
+    #third_section-girl_three{
+        left: 20px;
+        height: 60vh;
+    }
+    #third_section-girl_four{
+        right: 10px;
+        height: 60vh;
+    }
 }
 
 
@@ -442,6 +463,17 @@ body{
     #section_two .white_blur_block img{
         max-width: 240px;
         max-height: 290px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #third_section-girl_three {
+        left: 0;
+        height: 500px;
+    }
+    #third_section-girl_four {
+        right: 0;
+        height: 500px;
     }
 }
 
@@ -551,8 +583,48 @@ body{
         width: 100%;
     }
 
+    #section_three{
+        padding: 25px;
+    }
+    #section_three .hot_text{
+        font-size: 100px;
+        line-height: 100px;
+        margin: 20px;
+    }
+    #section_three .hot_button{
+        width: 400px;
+        height: 64px;
+    }
+    #section_three .white_text{
+        font-size: 28px;
+    }
 }
 
+@media screen and (max-width: 620px) {
+    #section_three .hot_text{
+        font-size: 80px;
+        line-height: 80px;
+    }
+    #section_three .hot_button{
+        width: 400px;
+        height: 56px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+    #section_three .white_text{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #third_section-girl_three {
+        left: 40px;
+        width: calc(100vw - 80px);
+        height: auto;
+    }
+    #third_section-girl_four {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 550px) {
     #section_one{
@@ -660,6 +732,25 @@ body{
     }
 }
 
+@media screen and (max-width: 500px) {
+    #section_three{
+        justify-content: space-between;
+    }
+    #section_three .hot_text{
+        font-size: 72px;
+        line-height: 72px;
+    }
+    #section_three .hot_button{
+        margin: 0;
+        width: 100%;
+        font-size: 22px;
+        line-height: 22px
+    }
+    #section_three .white_text{
+        font-size: 20px;
+    }
+}
+
 
 @media screen and (max-width: 450px){
     #section_two .white_blur_block{
@@ -668,6 +759,11 @@ body{
     }
     #section_two .hot_button{
         height: 56px;
+    }
+
+    #section_three .hot_text{
+        font-size: 60px;
+        line-height: 60px;
     }
 }
 
@@ -681,8 +777,21 @@ body{
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 350px){
     #section_two .white_blur_block{
         height: 240px;
     }
+
+    #section_three .hot_text{
+        font-size: 50px;
+        line-height: 50px;
+        margin: 30px 20px 20px 20px;
+    }
+
+    #section_three .white_text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
 }
